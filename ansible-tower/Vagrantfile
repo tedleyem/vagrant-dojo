@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.provider "virtualbox" do |vb|
+   config.vm.box = "ansible/tower"
+   config.vm.box_version = "3.8.6"
+   vb.memory = "4098"
+  end
+end
